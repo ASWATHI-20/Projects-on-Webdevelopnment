@@ -1,0 +1,60 @@
+/* Inherits base section styling from App.css */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: var(--bg-surface-elevated);
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  border-top: 4px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--primary-color);
+}
+
+.skill-icon {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  padding: 1rem;
+  background-color: var(--bg-surface);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+}
+
+.skill-card-title {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skill-item {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-bullet {
+  color: var(--primary-color);
+  font-weight: bold;
+}
